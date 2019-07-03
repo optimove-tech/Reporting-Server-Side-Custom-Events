@@ -15,8 +15,6 @@ Event Name:<br/>
  - Parameter Name:
  - Parameter Type:
 
-<br/>
-
 ### **Code Format**
 
 **URL**: https://gateway.optimove.events/reportEvent
