@@ -4,18 +4,18 @@ At this time, events reported using server side programming language will only b
 1. Please contact your Optimove Customer Success Manager (CSM) or Optimove point of contact to request this tracking feature. 
 2. Optimove’s Product Integration Team will then send you the following: 
 -- A. Optimove API Token: Unique API Token to use for the authenetication
--- B. Event ID: This custom events needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see below)
--- C. Paramater Name: This needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see below)
+-- B. Event ID: This custom events needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see [Events & Parameter request](https://github.com/optimove-tech/Reporting-Server-Side-Custom-Events/blob/master/README.md#events--parameter-request))
+-- C. Paramater Name: This needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see [Events & Parameter request](https://github.com/optimove-tech/Reporting-Server-Side-Custom-Events/blob/master/README.md#events--parameter-request))
 
 ## **Events & Parameter request**
 Optimove’s Product Integration Team require to pre-configure the custom events and their parameters in order for you to use within the API calls. The team will also help you create custom events use cases you will be reporting to Optimove from your server side. These events and the optional parameters should be configured on both sides.
-Note: All event names 
+<br/>
 | Event Name | Parameter Name | Type    |   |
 |------------|----------------|---------|---|
 | my_event   | my_param_1     | String  |   |
 |            | my_param_2     | Number  |   |
 |            | my_param_3     | Boolean |   |
-
+<br/>
 
 **URL**: https://gateway.optimove.events/reportEvent
 
