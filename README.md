@@ -10,16 +10,11 @@ At this time, events reported using server side programming language will only b
 ### **Events & Parameter request**
 Optimove’s Product Integration Team require to pre-configure the custom events and their parameters in order for you to use within the API calls. The team will also help you create custom events use cases you will be reporting to Optimove from your server side. These events and the optional parameters should be configured on both sides.
 <br/><br/>
-| Tracked Events                                                                                                   | SDK Function                                                                                                                                                                                                                                                    | Required | Usage in Optimove                                                                                                  |
+| Event Name | Parameter Name | Type |
 |--|--|--|--|
-| **Visitor/Customer Page Visits or Session**                                                                      | [`optimoveSDK.API.setPageVisit();`](https://github.com/optimoveproductintegration/Web-SDK-Integration-Guide#track-visits)                                        
-
-
-| Event Name | Parameter Name | Type    |
-|--|--|--|--|
-| my_event_1   | my_param_1     | String  |
-|-- | my_param_2     | Number  |
--- | my_param_3     | Boolean |
+| my_event_1 | my_param_1 | String  |
+| -- | my_param_2 | Number  |
+| -- | my_param_3 | Boolean |
 <br/>
 
 **URL**: https://gateway.optimove.events/reportEvent
