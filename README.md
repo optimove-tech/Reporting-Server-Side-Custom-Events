@@ -10,11 +10,9 @@ At this time, events reported using server side programming language will only b
 ### **Events & Parameter request**
 Optimove’s Product Integration Team require to pre-configure the custom events and their parameters in order for you to use within the API calls. The team will also help you create custom events use cases you will be reporting to Optimove from your server side. These events and the optional parameters should be configured on both sides.
 <br/><br/>
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+Event Name:
+-- Parameter Name:
+-- Parameter Type:
 
 <br/>
 
