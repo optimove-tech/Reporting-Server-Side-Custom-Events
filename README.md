@@ -1,13 +1,13 @@
 At this time, events reported using server side programming language will only be used by the Optimove realtime functionality only. 
 
-## **Enabling Optimove Server Side API**
+### **Enabling Optimove Server Side API**
 1. Please contact your Optimove Customer Success Manager (CSM) or Optimove point of contact to request this tracking feature. 
 2. Optimove’s Product Integration Team will then send you the following: 
 -- A. Optimove API Token: Unique API Token to use for the authenetication
 -- B. Event ID: This custom events needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see [Events & Parameter request](https://github.com/optimove-tech/Reporting-Server-Side-Custom-Events/blob/master/README.md#events--parameter-request))
 -- C. Paramater Name: This needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see [Events & Parameter request](https://github.com/optimove-tech/Reporting-Server-Side-Custom-Events/blob/master/README.md#events--parameter-request))
 
-## **Events & Parameter request**
+### **Events & Parameter request**
 Optimove’s Product Integration Team require to pre-configure the custom events and their parameters in order for you to use within the API calls. The team will also help you create custom events use cases you will be reporting to Optimove from your server side. These events and the optional parameters should be configured on both sides.
 <br/><br/>
 | Event Name | Parameter Name | Type    |   |
