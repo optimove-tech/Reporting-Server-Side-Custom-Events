@@ -1,14 +1,21 @@
-At this time, events reported using server side programming language will only be used by the Optimove realtime functionality. 
+At this time, events reported using server side programming language will only be used by the Optimove realtime functionality only. 
 
-## **How to request to report server side custom events**
+## **Enabling Optimove Server Side API**
 1. Please contact your Optimove Customer Success Manager (CSM) or Optimove point of contact to request this tracking feature. 
-2. Optimove’s Integration Team will then send you your tid (unique identifier) as part of the HTTPS request in order to get started.
-3.	Optimove’s Integration Team will also help you create custom events use cases you will be reporting to Optimove from your server side. These events and the optional parameters should be configured on both sides.
-4.	Optimove’s Integration Team will then provide you with the eid’s and context of the each one of pre-defined events (structure described below)
+2. Optimove’s Product Integration Team will then send you the following: 
+-- A. Optimove API Token: Unique API Token to use for the authenetication
+-- B. Event ID: This custom events needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see below)
+-- C. Paramater Name: This needs to be pre-configured by the Product Integration Team. Therefore please send a list of Events (see below)
 
+## **Events & Parameter request**
+Optimove’s Product Integration Team require to pre-configure the custom events and their parameters in order for you to use within the API calls. The team will also help you create custom events use cases you will be reporting to Optimove from your server side. These events and the optional parameters should be configured on both sides.
+Note: All event names 
+| Event Name | Parameter Name | Type    |   |
+|------------|----------------|---------|---|
+| my_event   | my_param_1     | String  |   |
+|            | my_param_2     | Number  |   |
+|            | my_param_3     | Boolean |   |
 
-## **How to report events**
-You can report events using HTTPS POST request, in the following format:
 
 **URL**: https://gateway.optimove.events/reportEvent
 
@@ -16,10 +23,10 @@ You can report events using HTTPS POST request, in the following format:
     
         JSON Payload:
         {
-          tid: [realtime Token],
+          tid: [Optimove API Token],
           cid: [CustomerID],
           eid: [EventID], 
-          context: {ContextName:ContextVal} 
+          context: {Paramater Name:Paramaeter Value} 
         }
 
 **Response Example**
@@ -29,7 +36,12 @@ You can report events using HTTPS POST request, in the following format:
 		   "Data": false
 		}
 
-**Notes**: 
-
- 1. At this time, events reported in this way will only be used by the Optimove realtime functionality.
- 3. In the near future, the Optimove SDK will also support reporting server-side events for use by scheduled campaigns.
+>**Important Notes:**
+>  - Event and parameter names are case sensitive.
+>  - Events and parameters use snake_case as a naming convention. Separate each word with one underscore character (_) and no spaces. (e.g., Checkout_Completed)
+>  - The parameter types available for use in event-reporting functions are:<br/>
+> **String**  – A series of alphanumeric characters of up to 255 characters in length, using any encoding<br/>
+> **Number**  – Any numeric value, whether an integer or a value containing a decimal point<br/>
+>  **Boolean**  – Is either "true" or "false" values, not a string<br/>
+>  - All monetary values must be reported in the same currency defined in your Optimove instance (e.g., if your instance is based on US dollars, all monetary event values must be reported in dollars). Optimove will not perform currency conversions.
+>  - If your Optimove instance supports multiple languages, all event parameters must use a single default language. This is required in order to maintain a unified set of events.
