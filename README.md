@@ -12,8 +12,8 @@ Optimove’s Product Integration Team require to pre-configure the custom events
 <br/><br/>
 
 Event Name:<br/>
->  - Parameter Name:
->  - Parameter Type:
+ - Parameter Name:
+ - Parameter Type:
 
 <br/>
 
