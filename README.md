@@ -16,8 +16,10 @@ Event Name:<br/>
  - Parameter Type:
 
 ### **Code Format**
+Please advise with Product Integration which endpoint to use.<br>
+**URL for US**: https://gateway.optimove.events/reportEvent<br>
+**URL for EU**: https://gateway-eu.optimove.events/reportEvent
 
-**URL**: https://gateway.optimove.events/reportEvent
 
 **Request**   
     
