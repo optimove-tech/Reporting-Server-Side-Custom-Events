@@ -21,16 +21,17 @@ Event Name:<br/>
 **Request**   
     
   JSON Payload:
-```json
+```
  {
-        "tenant": [Optimove Tenant ID], //integer
-	"event": [Event Key], //"string"
-	"customer": [CustomerID],//"string"
-	"visitor": [VisitorID],//"string" (Optional)
-	"timestamp":[Timestamp UTC],//"string"
+        "tenant": [Optimove Tenant ID], integer
+	"event": [Event Key], "string"
+	"customer": [CustomerID],"string"
+	"visitor": [VisitorID],"string" (Optional)
+	"timestamp":[Timestamp UTC],"string"
         "context": {Paramater Name:Parameter Value} 
   }
-```
+  ```
+
 **Request Example**   
 ```json
     {
