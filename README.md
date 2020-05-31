@@ -1,4 +1,5 @@
 
+
 ### **Enabling Optimove Server Side API (OptiEvent)**
 
  1. Please contact your Optimove Customer Success Manager (CSM) or Optimove point of contact to request this tracking feature. 
@@ -25,20 +26,19 @@ Event Name:<br/>
  {
         "tenant": [Optimove Tenant ID], integer
 	"event": [Event Key], "string"
-	"customer": [CustomerID],"string"
-	"visitor": [VisitorID],"string" (Optional)
+	"customer": [CustomerID],"string"**
+	"visitor": [VisitorID],"string"** 
 	"timestamp":[Timestamp UTC],"string"
         "context": {Paramater Name:Parameter Value} 
   }
   ```
 
-**Request Example**   
+**Request Example for Customer**   
 ```json
     {
         "tenant":999,
     	"event":"newsletter_signup",
     	"customer":"johndoe@domain.com",
-    	"visitor":"b449f7778d4981a5",
     	"timestamp":"2020-04-12 17:32:06.094 UTC",
         "context": {
             "email":"johndoe@domain.com",
@@ -62,9 +62,8 @@ Event Name:<br/>
     }
 ```
 >**Important Notes:**
->  - The CustomerID must match your Customer ID (CID) your are sending Optimove on a daily basis and is is also used to identify individual customer records within your Optimove customer database.
->   - The VisitorID is *optional*.
->   - The request must contain EITHER a VisitorID or a CustomerID to identify the user, NOT both.
+>   - **The request must contain EITHER a VisitorID or a CustomerID to identify the user, not both.
+> - The CustomerID must match your Customer ID (CID) your are sending Optimove on a daily basis and is is also used to identify individual customer records within your Optimove customer database.
 >  - Event and parameter names are case sensitive.
 >  - The parameter types available for use in event-reporting functions will be dependent on the configuration within your Optimove instance. <br/>
 >  - All monetary values must be reported in the same currency defined in your Optimove instance (e.g., if your instance is based on US dollars, all monetary event values must be reported in dollars). Optimove will not perform currency conversions.
