@@ -20,8 +20,8 @@ Event Name:<br/>
 
 **Request**   
     
-  JSON Payload:
 ```
+ JSON Payload:
  {
         "tenant": [Optimove Tenant ID], integer
 	"event": [Event Key], "string"
